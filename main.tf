@@ -15,8 +15,7 @@ provider "aws" {
 }
 
 # S3バケットを作成
-resource "aws_s3_bucket" "iac_git_cicd
-" {
+resource "aws_s3_bucket" "iac_git_cicd" {
   bucket = "iac-git-cicd-20241201"
   tags = {
     Name = "iac-git-cicd-20241201-s3"
